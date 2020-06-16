@@ -3,50 +3,9 @@ import { User } from "./entity/User";
 import { Tweet } from "./entity/Tweet";
 import { Test } from "./entity/Test";
 import { Product } from "./entity/Product";
+import console = require("console");
 
 export const Bootstrap = async () => {
-  // const userRepo = getRepository(User)
-  // const user = await userRepo.create({ firstName: 'Imran1', lastName: 'Bilal1', age: 30 })
-  // await userRepo.save(user).catch(err => console.log(err))
-  // console.log('New user saved ', user)
-
-  // const tweetRepo = getRepository(Tweet)
-  // const tweet = new Tweet()
-  // tweet.title = ' Nawaz Sharif '
-  // tweet.content = 'Pakistan PM old'
-  // tweet.user = user
-  // await tweetRepo.save(tweet).catch(err => console.log(err))
-
-  // const test = new Test();
-  // const productRepo = getRepository(Test)
-  //     test.title= "1 ton - 1.5 ton AC Cover - Safety Protector"
-  //     test.variants= {
-  //             id: 33743427534892,
-  //             product_id: 5075261882412,
-  //             title: "test value",
-  //             price: "950.00",
-  //             sku: "120202006_PK-1274794672",
-  //             position: 1,
-  //             inventory_policy: "deny",
-  //             compare_at_price: "0.00",
-  //             fulfillment_service: "manual",
-  //             inventory_management: "shopify",
-  //             option1: "test value",
-  //             option2: null,
-  //             option3: null,
-  //             created_at: "2020-04-21T01:10:33-04:00",
-  //             updated_at: "2020-05-15T05:43:15-04:00",
-  //             taxable: true,
-  //             barcode: "",
-  //             grams: 55000,
-  //             image_id: 15865517178924,
-  //             weight: 55,
-  //             weight_unit: "kg",
-  //             inventory_item_id: 35624661352492,
-  //             inventory_quantity: -4,
-  //             old_inventory_quantity: -4,
-  //             requires_shipping: true,
-  //     }
 
   const prod = new Product();
   const productRepo = getRepository(Product);
@@ -132,7 +91,14 @@ export const Bootstrap = async () => {
   prod.createdAt = "2020-06-10T13:41:02.128Z";
   prod.updatedAt = "2020-06-10T13:41:02.128Z";
 
-  const product = await productRepo.create(prod);
-  await productRepo.save(product).catch((err) => console.log(err));
-  console.log("New user saved ", product);
+//   const product = await productRepo.create(prod);
+//   await productRepo.save(product).catch((err) => console.log(err));
+//   console.log("New user saved ", product);
+    
+    //Find record query
+    const productfind = await productRepo.find({
+      where: { storeId: "5e7a0092e8763d0cdc6b34f8" },
+    }).then(res => {
+        console.log(res)
+    }).catch(err => console.log(err))
 };
