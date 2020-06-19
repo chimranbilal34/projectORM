@@ -1,3 +1,4 @@
+import { Main } from './main';
 import { Bootstrap } from './bootstrap';
 import "reflect-metadata";
 import {createConnection} from "typeorm";

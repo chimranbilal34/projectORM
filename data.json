@@ -1,0 +1,419 @@
+{
+    "id": 2507901567131,
+    "email": "me_keemx@hotmail.com",
+    "closed_at": null,
+    "created_at": "2020-06-19T11:26:57+05:00",
+    "updated_at": "2020-06-19T11:38:32+05:00",
+    "number": 24415,
+    "note": "Order confirmed by customer via sms.",
+    "token": "e61607b5eb7215970a9dba211b6cc298",
+    "gateway": "Cash on Delivery (COD)",
+    "test": false,
+    "total_price": "105900.00",
+    "subtotal_price": "105900.00",
+    "total_weight": 115000,
+    "total_tax": "0.00",
+    "taxes_included": false,
+    "currency": "PKR",
+    "financial_status": "pending",
+    "confirmed": true,
+    "total_discounts": "0.00",
+    "total_line_items_price": "105900.00",
+    "cart_token": "202861cbd9f9f21362ca2e6a2d13da7b",
+    "buyer_accepts_marketing": false,
+    "name": "#25415",
+    "referring_site": "https://www.google.com/",
+    "landing_site": "/?gclid=EAIaIQobChMIouPowqL56QIVmfdRCh1fKQaDEAAYASAAEgKnQ_D_BwE",
+    "cancelled_at": null,
+    "cancel_reason": null,
+    "total_price_usd": "639.32",
+    "checkout_token": "b6e75ff1732ee763e0dc33211e66a37a",
+    "reference": null,
+    "user_id": null,
+    "location_id": null,
+    "source_identifier": null,
+    "source_url": null,
+    "processed_at": "2020-06-19T11:26:56+05:00",
+    "device_id": null,
+    "phone": null,
+    "customer_locale": "en",
+    "app_id": 580111,
+    "browser_ip": "103.255.5.97",
+    "landing_site_ref": null,
+    "order_number": 25415,
+    "discount_applications": [],
+    "discount_codes": [],
+    "note_attributes": [
+        {
+            "name": "orient-electronics:commi-courier:storelocation",
+            "value": "1038"
+        },
+        {
+            "name": "orient-electronics:commi-courier:storecity",
+            "value": "FAISALABAD"
+        },
+        {
+            "name": "orient-electronics:commi-courier:consignment",
+            "value": "2507901567131-25415"
+        },
+        {
+            "name": "orient-electronics:commi-courier:freight",
+            "value": "0"
+        },
+        {
+            "name": "Sap Order Number",
+            "value": "SUCCESS:1000442271 "
+        },
+        {
+            "name": "Sap Retail Order Number",
+            "value": "SUCCESS:1000442272"
+        }
+    ],
+    "payment_gateway_names": [
+        "Cash on Delivery (COD)"
+    ],
+    "processing_method": "manual",
+    "checkout_id": 14286277509275,
+    "source_name": "web",
+    "fulfillment_status": "fulfilled",
+    "tax_lines": [],
+    "tags": "auto_fulfillment, commi-courier, confirm, employee_2332, junaid_rehman, SAP_SUCCESS, SHIPMENT_SUCCESS, sms_confirmation",
+    "contact_email": "me_keemx@hotmail.com",
+    "order_status_url": "https://orient.com.pk/24591583/orders/e61607b5eb7215970a9dba211b6cc298/authenticate?key=9ddada05834840acbe4e88e9744de47e",
+    "presentment_currency": "PKR",
+    "total_line_items_price_set": {
+        "shop_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        }
+    },
+    "total_discounts_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        }
+    },
+    "total_shipping_price_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        }
+    },
+    "subtotal_price_set": {
+        "shop_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        }
+    },
+    "total_price_set": {
+        "shop_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "105900.00",
+            "currency_code": "PKR"
+        }
+    },
+    "total_tax_set": {
+        "shop_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        },
+        "presentment_money": {
+            "amount": "0.00",
+            "currency_code": "PKR"
+        }
+    },
+    "line_items": [
+        {
+            "id": 5525505015963,
+            "variant_id": 33408442728580,
+            "title": "2 Ton Floor Standing Ultimate Silk White Cool Only",
+            "quantity": 1,
+            "sku": "Ultimate 24G Silk White 2.3.9(Cool Only)",
+            "variant_title": "Gold Fin",
+            "vendor": "Orient Electronics",
+            "fulfillment_service": "manual",
+            "product_id": 1585005166628,
+            "requires_shipping": true,
+            "taxable": true,
+            "gift_card": false,
+            "name": "2 Ton Floor Standing Ultimate Silk White Cool Only - Gold Fin",
+            "variant_inventory_management": "shopify",
+            "properties": [],
+            "product_exists": true,
+            "fulfillable_quantity": 0,
+            "grams": 115000,
+            "price": "105900.00",
+            "total_discount": "0.00",
+            "fulfillment_status": "fulfilled",
+            "price_set": {
+                "shop_money": {
+                    "amount": "105900.00",
+                    "currency_code": "PKR"
+                },
+                "presentment_money": {
+                    "amount": "105900.00",
+                    "currency_code": "PKR"
+                }
+            },
+            "total_discount_set": {
+                "shop_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                },
+                "presentment_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                }
+            },
+            "discount_allocations": [],
+            "tax_lines": [],
+            "origin_location": {
+                "id": 3872145291,
+                "country_code": "PK",
+                "province_code": "",
+                "name": "Orient Electronics",
+                "address1": "Orient Electronics, 26 km, Multan Road",
+                "address2": "",
+                "city": "Lahore",
+                "zip": "54000"
+            },
+            "destination_location": {
+                "id": 2168870371483,
+                "country_code": "PK",
+                "province_code": "",
+                "name": "Abdul Karim",
+                "address1": "52A paradise valley shiekhupura road faisalabad near gatwala",
+                "address2": "",
+                "city": "Faisalabad",
+                "zip": "041"
+            }
+        }
+    ],
+    "fulfillments": [
+        {
+            "id": 2381148127387,
+            "order_id": 2507901567131,
+            "status": "success",
+            "created_at": "2020-06-19T11:37:44+05:00",
+            "service": "manual",
+            "updated_at": "2020-06-19T11:37:44+05:00",
+            "tracking_company": null,
+            "shipment_status": null,
+            "location_id": 55003723,
+            "line_items": [
+                {
+                    "id": 5525505015963,
+                    "variant_id": 33408442728580,
+                    "title": "2 Ton Floor Standing Ultimate Silk White Cool Only",
+                    "quantity": 1,
+                    "sku": "Ultimate 24G Silk White 2.3.9(Cool Only)",
+                    "variant_title": "Gold Fin",
+                    "vendor": "Orient Electronics",
+                    "fulfillment_service": "manual",
+                    "product_id": 1585005166628,
+                    "requires_shipping": true,
+                    "taxable": true,
+                    "gift_card": false,
+                    "name": "2 Ton Floor Standing Ultimate Silk White Cool Only - Gold Fin",
+                    "variant_inventory_management": "shopify",
+                    "properties": [],
+                    "product_exists": true,
+                    "fulfillable_quantity": 0,
+                    "grams": 115000,
+                    "price": "105900.00",
+                    "total_discount": "0.00",
+                    "fulfillment_status": "fulfilled",
+                    "price_set": {
+                        "shop_money": {
+                            "amount": "105900.00",
+                            "currency_code": "PKR"
+                        },
+                        "presentment_money": {
+                            "amount": "105900.00",
+                            "currency_code": "PKR"
+                        }
+                    },
+                    "total_discount_set": {
+                        "shop_money": {
+                            "amount": "0.00",
+                            "currency_code": "PKR"
+                        },
+                        "presentment_money": {
+                            "amount": "0.00",
+                            "currency_code": "PKR"
+                        }
+                    },
+                    "discount_allocations": [],
+                    "tax_lines": [],
+                    "origin_location": {
+                        "id": 3872145291,
+                        "country_code": "PK",
+                        "province_code": "",
+                        "name": "Orient Electronics",
+                        "address1": "Orient Electronics, 26 km, Multan Road",
+                        "address2": "",
+                        "city": "Lahore",
+                        "zip": "54000"
+                    },
+                    "destination_location": {
+                        "id": 2168870371483,
+                        "country_code": "PK",
+                        "province_code": "",
+                        "name": "Abdul Karim",
+                        "address1": "52A paradise valley shiekhupura road faisalabad near gatwala",
+                        "address2": "",
+                        "city": "Faisalabad",
+                        "zip": "041"
+                    }
+                }
+            ],
+            "tracking_number": null,
+            "tracking_numbers": [],
+            "tracking_url": null,
+            "tracking_urls": [],
+            "receipt": {},
+            "name": "#25415.1"
+        }
+    ],
+    "refunds": [],
+    "total_tip_received": "0.0",
+    "shipping_lines": [
+        {
+            "id": 2072802394267,
+            "title": "Free  Shipping",
+            "price": "0.00",
+            "code": "Free  Shipping",
+            "source": "shopify",
+            "phone": null,
+            "requested_fulfillment_service_id": null,
+            "delivery_category": null,
+            "carrier_identifier": null,
+            "discounted_price": "0.00",
+            "price_set": {
+                "shop_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                },
+                "presentment_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                }
+            },
+            "discounted_price_set": {
+                "shop_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                },
+                "presentment_money": {
+                    "amount": "0.00",
+                    "currency_code": "PKR"
+                }
+            },
+            "discount_allocations": [],
+            "tax_lines": []
+        }
+    ],
+    "billing_address": {
+        "first_name": "Abdul",
+        "address1": "52A paradise valley shiekhupura road faisalabad near gatwala",
+        "phone": "0333 3507900",
+        "city": "Faisalabad",
+        "zip": "041",
+        "province": null,
+        "country": "Pakistan",
+        "last_name": "Karim",
+        "address2": "",
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Abdul Karim",
+        "country_code": "PK",
+        "province_code": null
+    },
+    "shipping_address": {
+        "first_name": "Abdul",
+        "address1": "52A paradise valley shiekhupura road faisalabad near gatwala",
+        "phone": "0333 3507900",
+        "city": "Faisalabad",
+        "zip": "041",
+        "province": null,
+        "country": "Pakistan",
+        "last_name": "Karim",
+        "address2": "",
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Abdul Karim",
+        "country_code": "PK",
+        "province_code": null
+    },
+    "client_details": {
+        "browser_ip": "103.255.5.97",
+        "accept_language": "en-GB,en-US;q=0.9,en;q=0.8",
+        "user_agent": "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-N9500) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.2 Chrome/75.0.3770.143 Mobile Safari/537.36",
+        "session_hash": null,
+        "browser_width": 412,
+        "browser_height": 807
+    },
+    "customer": {
+        "id": 1170005950500,
+        "email": "me_keemx@hotmail.com",
+        "accepts_marketing": false,
+        "created_at": "2019-05-08T02:38:53+05:00",
+        "updated_at": "2020-06-19T11:26:57+05:00",
+        "first_name": "abdul",
+        "last_name": "karim",
+        "orders_count": 4,
+        "state": "disabled",
+        "total_spent": "305699.00",
+        "last_order_id": 2507901567131,
+        "note": null,
+        "verified_email": true,
+        "multipass_identifier": null,
+        "tax_exempt": false,
+        "phone": null,
+        "tags": "",
+        "last_order_name": "#25415",
+        "currency": "PKR",
+        "accepts_marketing_updated_at": "2019-05-08T02:38:53+05:00",
+        "marketing_opt_in_level": null,
+        "default_address": {
+            "id": 4384370655387,
+            "customer_id": 1170005950500,
+            "first_name": "Abdul",
+            "last_name": "Karim",
+            "company": null,
+            "address1": "52A paradise valley shiekhupura road faisalabad near gatwala",
+            "address2": "",
+            "city": "Faisalabad",
+            "province": null,
+            "country": "Pakistan",
+            "zip": "041",
+            "phone": "0333 3507900",
+            "name": "Abdul Karim",
+            "province_code": null,
+            "country_code": "PK",
+            "country_name": "Pakistan",
+            "default": true
+        }
+    }
+}

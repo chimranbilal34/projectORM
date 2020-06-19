@@ -24,13 +24,13 @@ export class Product {
   product_type: string;
 
   @Column({ type: "datetime" })
-  created_at: string;
+  created_at: Date;
 
   @Column()
   handle: string;
 
   @Column({ type: "datetime" })
-  updated_at: string;
+  updated_at: Date;
 
   @Column()
   published_at: string;
