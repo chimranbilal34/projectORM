@@ -1,10 +1,6 @@
-import { Variant } from './Variant';
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinColumn, OneToOne } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 import { type } from "os";
-import { Options } from './Options';
-import { Images } from './Images';
-import { Image } from './Image';
-
+import { Variant } from "../types/Variant";
 
 @Entity({ name: "product" })
 export class Product {
@@ -43,19 +39,48 @@ export class Product {
 
   @Column()
   tags: string;
+  //jsonb have no support in mysql
+  @Column({ type: "json", nullable: true })
+  variants: [Variant];
 
-  @OneToMany((type) => Variant, (variant) => variant.product)
-  variants: Variant[];
+  @Column({ type: "simple-json", nullable: true })
+  options: {
+    id: number;
+    product_id: number;
+    name: string;
+    position: number;
+    values: [string];
+  };
 
-  @OneToMany((type) => Options, (options) => options.product)
-  options: Options[];
+  @Column({ type: "simple-json", nullable: true })
+  images: [
+    {
+      id: number;
+      product_id: number;
+      position: number;
+      created_at: string;
+      updated_at: string;
+      alt: string;
+      width: number;
+      height: number;
+      src: string;
+      variant_ids: [number];
+    }
+  ];
 
-  @OneToMany((type) => Images, (images) => images.product)
-  images: Images[];
-
-  @OneToOne((type) => Image)
-  @JoinColumn()
-  image: Image
+  @Column({ type: "simple-json", nullable: true })
+  image: {
+    id: number;
+    product_id: number;
+    position: number;
+    created_at: string;
+    updated_at: string;
+    alt: string;
+    width: number;
+    height: number;
+    src: string;
+    variant_ids: [number];
+  };
 
   @Column()
   storeId: string;

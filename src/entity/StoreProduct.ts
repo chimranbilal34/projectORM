@@ -60,7 +60,7 @@ import { StoreImage } from './SimpleImage';
    @OneToMany((type) => StoreOption, (option) => option.product)
    option: StoreOption[];
 
-   @OneToMany((type) => StoreImages, (option) => option.product)
+   @OneToMany((type) => StoreImages, (images) => images.product)
    images: StoreImages[];
 
    @OneToOne((type) => StoreImage)

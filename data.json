@@ -43,6 +43,8 @@
     "order_number": 25415,
     "discount_applications": [],
     "discount_codes": [],
+
+    //remain
     "note_attributes": [
         {
             "name": "orient-electronics:commi-courier:storelocation",
@@ -69,6 +71,7 @@
             "value": "SUCCESS:1000442272"
         }
     ],
+    
     "payment_gateway_names": [
         "Cash on Delivery (COD)"
     ],
@@ -81,6 +84,7 @@
     "contact_email": "me_keemx@hotmail.com",
     "order_status_url": "https://orient.com.pk/24591583/orders/e61607b5eb7215970a9dba211b6cc298/authenticate?key=9ddada05834840acbe4e88e9744de47e",
     "presentment_currency": "PKR",
+
     "total_line_items_price_set": {
         "shop_money": {
             "amount": "105900.00",
@@ -208,6 +212,7 @@
             }
         }
     ],
+    //rehta abi
     "fulfillments": [
         {
             "id": 2381148127387,
@@ -293,9 +298,10 @@
             "receipt": {},
             "name": "#25415.1"
         }
-    ],
+    ], 
     "refunds": [],
     "total_tip_received": "0.0",
+
     "shipping_lines": [
         {
             "id": 2072802394267,
