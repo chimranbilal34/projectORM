@@ -133,7 +133,7 @@ export const createProduct = async () => {
  
 
   //Relationship with json data
-/*  const prod = new Product();
+  const prod = new Product();
   const productRepo = getRepository(Product);
 
   prod.title = "1 ton - 1.5 ton AC Cover - Safety Protector";
@@ -219,13 +219,13 @@ export const createProduct = async () => {
 
   const product = await productRepo.create(prod);
   await productRepo.save(product).catch((err) => console.log(err));
-  console.log("New user saved ", product);  */
+  console.log("New user saved ", product); 
 
   //   //Find record query
-  const productRepo= getRepository(Product)
-    const productfind = await productRepo.findOne({
-      where: { images: { position: 5 } }}).then(res => {
-        console.log(res)
-    }).catch(err => console.log(err))
+  // const productRepo= getRepository(Product)
+  //   const productfind = await productRepo.findOne({
+  //     where: { images: { position: 5 } }}).then(res => {
+  //       console.log(res)
+  //   }).catch(err => console.log(err))
   
 };

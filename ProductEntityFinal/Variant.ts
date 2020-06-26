@@ -1,17 +1,11 @@
  import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
 import { type } from "os";
-import { StoreProduct } from "./StoreProduct";
+import { Product } from "./Product";
 
-@Entity({ name: "storevariant" })
-export class StoreVariant {
+@Entity({ name: "variant" })
+export class Variant {
   @PrimaryGeneratedColumn("uuid")
   id: number;
-
-  @Column()
-  variantid: string;
-
-  @Column()
-  product_id: string;
 
   @Column()
   title: string;
@@ -26,16 +20,16 @@ export class StoreVariant {
   position: number;
 
   @Column()
-  inventory_policy: string;
+  inventoryPolicy: string;
 
   @Column()
-  compare_at_price: string;
+  compareAtPrice: string;
 
   @Column()
-  fulfillment_service: string;
+  fulfillmentService: string;
 
   @Column()
-  inventory_management: string;
+  inventoryManagement: string;
 
   @Column({nullable: true})
   option1: string;
@@ -47,10 +41,10 @@ export class StoreVariant {
   option3: string;
 
   @Column()
-  created_at: string;
+  createdAt: string;
 
   @Column()
-  updated_at: string;
+  updatedAt: string;
 
   @Column()
   taxable: boolean;
@@ -62,27 +56,24 @@ export class StoreVariant {
   grams: number;
 
   @Column()
-  image_id: string;
-
-  @Column()
   weight: number;
 
   @Column()
-  weight_unit: string;
+  weightInit: string;
 
   @Column()
-  inventory_item_id: string;
+  inventoryItemId: string;
 
   @Column()
-  inventory_quantity: number;
+  inventoryQuantity: number;
 
   @Column()
-  old_inventory_quantity: number;
+  oldInventoryQuantity: number;
 
   @Column()
-  requires_shipping: true;
+  requiresShipping: true;
 
-  @OneToOne((type) => StoreProduct, (product) => product.varient)
+  @OneToOne((type) => Product, (product) => product.varient)
   @JoinColumn()
-  product: StoreProduct;
+  product: Product;
 }

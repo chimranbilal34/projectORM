@@ -1,17 +1,11 @@
  import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
 import { type } from "os";
-import { StoreProduct } from "./StoreProduct";
+import { Product } from "./Product";
 
-@Entity({ name: "storeoption" })
-export class StoreOption {
+@Entity({ name: "option" })
+export class Option {
   @PrimaryGeneratedColumn("uuid")
   id: number;
-
-  @Column({default: 0})
-  optionid: string;
-
-  @Column({ default: 0})
-  product_id: string;
 
   @Column({default: ' '})
   name: string;
@@ -22,9 +16,9 @@ export class StoreOption {
   @Column("simple-array", { nullable: true })
   values: [string];
 
-  @OneToOne((type) => StoreProduct, (product) => product.option)
+  @OneToOne((type) => Product, (product) => product.option)
   @JoinColumn()
-  product: StoreProduct;
+  product: Product;
 }
 
 

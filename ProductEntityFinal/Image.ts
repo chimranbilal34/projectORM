@@ -1,26 +1,23 @@
  import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
 import { type } from "os";
-import { StoreProduct } from "./StoreProduct";
+import { Product } from "./Product";
 
-@Entity({ name: "storeimages" })
-export class StoreImages {
+@Entity({ name: "image" })
+export class Image {
   @PrimaryGeneratedColumn("uuid")
   id: number;
 
   @Column()
-  image_id: string;
-
-  @Column()
-  product_id: string;
+  productId: string;
 
   @Column()
   position: number;
 
   @Column()
-  created_at: string;
+  createdAt: string;
 
   @Column()
-  updated_at: string;
+  updatedAt: string;
 
   @Column({ nullable: true })
   alt: string;
@@ -35,10 +32,7 @@ export class StoreImages {
   src: string;
 
   @Column("simple-array", { nullable: true })
-  variant_ids: [string];
+  variantIds: [string];
 
-  @OneToOne((type) => StoreProduct, (product) => product.images)
-  @JoinColumn()
-  product: StoreProduct;
 }
 
