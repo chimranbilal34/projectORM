@@ -1,6 +1,4 @@
- import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
-import { type } from "os";
-import { Product } from "./Product";
+ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 
 @Entity({ name: "image" })
 export class Image {
@@ -13,10 +11,10 @@ export class Image {
   @Column()
   position: number;
 
-  @Column()
+  @CreateDateColumn()
   createdAt: string;
 
-  @Column()
+  @UpdateDateColumn()
   updatedAt: string;
 
   @Column({ nullable: true })
@@ -33,6 +31,5 @@ export class Image {
 
   @Column("simple-array", { nullable: true })
   variantIds: [string];
-
 }
 

@@ -1,4 +1,4 @@
- import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
+ import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn, UpdateDateColumn, CreateDateColumn } from "typeorm";
 import { type } from "os";
 import { Product } from "./Product";
 
@@ -31,26 +31,26 @@ export class Variant {
   @Column()
   inventoryManagement: string;
 
-  @Column({nullable: true})
+  @Column({ nullable: true })
   option1: string;
 
-  @Column({nullable: true})
+  @Column({ nullable: true })
   option2: string;
 
-  @Column({nullable: true})
+  @Column({ nullable: true })
   option3: string;
 
-  @Column()
+  @CreateDateColumn()
   createdAt: string;
 
-  @Column()
-  updatedAt: string;
+  @UpdateDateColumn()
+  updatedAt: Date;
 
   @Column()
   taxable: boolean;
 
   @Column()
-  barcode: "";
+  barcode: string;
 
   @Column()
   grams: number;

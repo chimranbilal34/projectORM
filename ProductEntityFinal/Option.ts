@@ -20,9 +20,3 @@ export class Option {
   @JoinColumn()
   product: Product;
 }
-
-
-
-
-
-

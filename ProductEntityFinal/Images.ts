@@ -1,5 +1,4 @@
- import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
-import { type } from "os";
+ import { Entity, PrimaryGeneratedColumn, Column, OneToOne, JoinColumn, CreateDateColumn, UpdateDateColumn } from "typeorm";
 import { Product } from "./Product";
 
 @Entity({ name: "images" })
@@ -10,11 +9,11 @@ export class Images {
   @Column()
   position: number;
 
-  @Column()
-  createdAt: string;
+  @CreateDateColumn()
+  createdAt: Date;
 
-  @Column()
-  updatedAt: string;
+  @UpdateDateColumn()
+  updatedAt: Date;
 
   @Column({ nullable: true })
   alt: string;
@@ -27,6 +26,9 @@ export class Images {
 
   @Column({ default: " " })
   src: string;
-  
+
+  @OneToOne((type) => Product, (product) => product.images)
+  @JoinColumn()
+  product: Product;
 }
 
